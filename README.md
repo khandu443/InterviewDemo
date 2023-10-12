@@ -1,3 +1,8 @@
+
+**Pre-requisites**: 
+1. install python before executing the code
+2. Install Terraform
+3. AWS account with Permissions to create resources.
 **Challenge #1**
 
 3 tier Architecture Diagram
@@ -20,3 +25,13 @@ This script will retrive commonly used instance metadata. We can add more comman
 
 
 **Challenge #3**
+
+Below given python file will give values of the keys using function.
+Ch-3_NestedObject/nested-object.py
+Below given python file will test the code
+Ch-3_NestedObject/pytest.py
+
+I have created test case using function.
+Ch-3_NestedObject/testsWithFunction
+
+
