@@ -3,6 +3,7 @@
 1. install python before executing the code
 2. Install Terraform
 3. AWS account with Permissions to create resources.
+4. Choose AMI id from zones
 
    
 **Challenge #1**
