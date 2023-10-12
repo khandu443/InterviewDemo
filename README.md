@@ -19,3 +19,4 @@ Please run Ch-2_InstanceMetadata/instance_metadata.sh script to get instance met
 This script will retrive commonly used instance metadata. We can add more commands to get more information from instance metadata
 
 
+**Challenge #3**
