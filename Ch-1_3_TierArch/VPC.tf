@@ -72,3 +72,12 @@ resource "aws_subnet" "rds-sub-2" {
     Name = "rds-2b"
   }
 }
+
+resource "aws_db_subnet_group" "default" {
+  name       = "main"
+  subnet_ids = [aws_subnet.rds-sub-1.id, aws_subnet.rds-sub-2.id]
+
+  tags = {
+    Name = "rds subnet group"
+  }
+}
