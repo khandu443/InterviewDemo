@@ -1,4 +1,6 @@
-#Create EC2 Instance
+#Create EC2 Instance for web and app servers.
+#please make sure key is available before execution.
+
 resource "aws_instance" "web-1" {
   ami                    = "ami-0d5eff06f840b45e9"
   instance_type          = "t2.micro"
@@ -6,6 +8,7 @@ resource "aws_instance" "web-1" {
   vpc_security_group_ids = [aws_security_group.webserver-sg.id]
   subnet_id              = aws_subnet.pub-sub-1.id
   user_data              = file("install_apache.sh")
+  key_name               = "source_key"
 
   tags = {
     Name = "Web Server 1"
@@ -20,7 +23,7 @@ resource "aws_instance" "web-2" {
   vpc_security_group_ids = [aws_security_group.webserver-sg.id]
   subnet_id              = aws_subnet.pub-sub-2.id
   user_data              = file("install_apache.sh")
-
+  key_name               = "source_key"
   tags = {
     Name = "Web Server 2"
   }
